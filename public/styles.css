@@ -78,7 +78,16 @@ section {
 	color: #E5F4E3;
 }
 
-#bio-container {
+#products {
+	background-color: #14453D;
+	color: #E5F4E3;
+}
+
+#showcase {
+	
+}
+
+.section-container {
 	width: 50%;
 	margin: auto;
 }
@@ -100,6 +109,36 @@ section {
 	letter-spacing: .8px;
 	line-height: 1.25;
 	font-size: 20px;
+}
+
+#footer {
+	margin-top: 250px;
+	background-color: #8693AB;
+	color: #E5F4E3;
+}
+
+.footer-links {
+	display: flex;
+	gap: 30px;
+	list-style: none;
+	padding: 0;
+	margin: 30px 0;
+}
+
+.footer-links a {
+	color: #E5F4E3;
+	text-decoration: none;
+	border-bottom: 2px solid #14453D;
+	transition: color .2s;
+}
+
+.footer-links a:hover {
+	color: #14453D;
+}
+
+.footer-copyright {
+	font-size: 14px;
+	opacity: 0.8;
 }
 
 
