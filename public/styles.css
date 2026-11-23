@@ -1,15 +1,18 @@
 * {
 	scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
 }
 
 body {
-	background-color: #41463D;
+	background-color: #E5F4E3;
+	padding: 0;
+	margin: 0;
 }
 
 nav {
 	display: flex;
 	align-items: center;
-	font-family: roboto, sans-serif;
 	background-color: #643A7180;
 	backdrop-filter: blur(8px);
 	position: fixed;
@@ -17,24 +20,26 @@ nav {
 	left: 0;
 	width: 100%;
 	height: 50px;
+	border-bottom: 1px solid #8693AB;
 }
 
 #tag-img {
 	width: 30px;
-	margin: auto 30px;
+	margin: auto 0 auto 30px;
 	border-radius: 6px;
 }
 
 #tag {
-	margin: auto 30px auto 30px;
+	margin: auto auto auto 30px;;
 	color: #E2FCEF;
+	font-family: cantarell, roboto, sans-serif;
 }
 
 #nav-link-container {
 	margin: auto 30px auto auto;
 	display: flex;
-	gap: 40px;
-	font-size: 25px;
+	gap: 30px;
+	font-size: 23px;
 	font-family: roboto, sans-serif;
 	align-items: center;
 }
@@ -47,22 +52,81 @@ nav {
 }
 
 .nav-link:hover {
-	color: #8693AB;
+	color: #14453D;
 	font-size: 28px;
 }
 
-#container {
-	width: 50%;
-	height: auto;
-	display: flex;
+.image {
+	display: block;
+	width: 30%;
+	margin: 100px auto 50px auto;
+	border-radius: 5px;
 }
 
-#image {
-	background-image: url('https://res.cloudinary.com/dbuwekmex/image/upload/v1795410285/IMG_4071_hefqpi.heic');
-	height: 300px;
+#space {
+	height: 1000px;
+}
+
+section {
+	padding: 50px 0px;
+	width: 100%;
+	display: flow-root;
+}
+
+#bio {
+	background-color: #8693AB;
+	color: #E5F4E3;
+}
+
+#bio-container {
 	width: 50%;
-	background-position: center;
-	background-repeat: none;
-	background-size: cover;
-	margin: 100px auto;
+	margin: auto;
+}
+
+.header {
+	font-family: cantarell, roboto, sans-serif;
+	margin-bottom: 30px;
+}
+
+.section-image {
+	width: 50%;
+	display: flex;
+	float: left;
+	margin: 0 30px 0 0;
+}
+
+.text-content {
+	font-family: playfair, roboto, sans-serif;
+	letter-spacing: .8px;
+	line-height: 1.25;
+	font-size: 20px;
+}
+
+
+@media screen and (max-width:1000px) {
+	.image {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#tag {
+		display: none;
+	}
+
+	.nav-link {
+		font-size: 20px;
+	}
+
+	.nav-link:hover {
+		font-size: 20px;
+	}
+
+	.image {
+		width: 75%;
+	}
+
+	#bio-container {
+		width: 90%;
+	}
 }
