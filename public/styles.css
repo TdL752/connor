@@ -10,6 +10,8 @@ body {
 	margin: 0;
 }
 
+/* navigation bar styling */
+
 nav {
 	display: flex;
 	align-items: center;
@@ -63,45 +65,11 @@ nav {
 	border-radius: 5px;
 }
 
-#space {
-	height: 1000px;
-}
-
-section {
-	padding: 50px 0px;
-	width: 100%;
-	display: flow-root;
-}
-
-#bio {
-	background-color: #8693AB;
-	color: #E5F4E3;
-}
-
-#products {
-	background-color: #14453D;
-	color: #E5F4E3;
-}
-
-#showcase {
-	
-}
-
-.section-container {
-	width: 50%;
-	margin: auto;
-}
+/* text styling */
 
 .header {
 	font-family: cantarell, roboto, sans-serif;
 	margin-bottom: 30px;
-}
-
-.section-image {
-	width: 50%;
-	display: flex;
-	float: left;
-	margin: 0 30px 0 0;
 }
 
 .text-content {
@@ -110,6 +78,76 @@ section {
 	line-height: 1.25;
 	font-size: 20px;
 }
+
+/* section styling */
+
+section {
+	padding: 50px 0px;
+	width: 100%;
+	display: flow-root;
+}
+
+.inner-section-container {
+	width: 50%;
+	margin: auto;
+}
+
+/* bio styling */
+
+#bio {
+	background-color: #8693AB;
+	color: #E5F4E3;
+}
+
+.section-image {
+	width: 50%;
+	display: flex;
+	float: left;
+	margin: 0 30px 0 0;
+	border-radius: 10px;
+}
+
+/* products styling */
+
+#products {
+	background-color: #14453D;
+	color: #E5F4E3;
+}
+
+#products-container {
+	width: 50%;
+}
+
+.all-products-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+
+.product-container {
+	width: 90%;
+	background-color: #643A71;
+	padding: 10px;
+	border-radius: 30px;
+	margin: auto;
+}
+
+.product-image {
+	width: 100%;
+	border-radius: 20px;
+}
+
+
+
+/* showcase styling */
+
+#showcase {
+	
+}
+
+
+
+/* footer styling */
 
 #footer {
 	margin-top: 250px;
@@ -146,6 +184,14 @@ section {
 	.image {
 		width: 50%;
 	}
+
+	.inner-section-container {
+		width: 75%;
+	}
+
+	#products-container {
+		width: 75%;
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -165,7 +211,26 @@ section {
 		width: 75%;
 	}
 
-	.section-container {
+	.inner-section-container {
 		width: 90%;
+	}
+
+	#all-products-container {
+		gap: 5px;
+	}
+
+	#products-container {
+		width: 100%;
+	}
+
+	.product-container {
+		width: 90%;
+		padding: 5px;
+		border-radius: 20px;
+
+	}
+
+	.product-image {
+		border-radius: 15px;
 	}
 }
